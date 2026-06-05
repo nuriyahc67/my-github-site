@@ -37,6 +37,14 @@ h1 {
 } 
 h2 { color: #ffffff; border-bottom: 2px solid #f2b9f1; padding-bottom: 5px; } 
 p { line-height: 1.6; font-size: 1.1rem; }
+
+/* Styles the music player container */
+.music-player {
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+}
 </style>
 </head>
 <body>
@@ -61,6 +69,16 @@ p { line-height: 1.6; font-size: 1.1rem; }
   <p>Check out my projects:
     <a href="https://github.com/nuriyahc67" style="color: #2d3188; font-weight: bold;">GITHUB LINK</a> 
   </p>
+
+  <h2>My Favorite Song</h2>
+  <p>Listen to some background music while browsing my site:</p>
+  <div class="music-player">
+    <!-- 
+      You can change the song! 
+      Just swap out "dQw4w9WgXcQ" in the link below with your favorite video's ID.
+    -->
+    <iframe width="300" height="60" src="https://www.youtube.com/watch?v=f43ODtOUmBw&list=RDf43ODtOUmBw&start_radio=1" title="Clairo - Flamin Hot Cheetos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
 </body>
