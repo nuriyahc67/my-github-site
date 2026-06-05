@@ -7,37 +7,61 @@
 <style>
 body { 
   font-family: Arial, sans-serif; 
-  max-width: 800px;
-  margin: 0 auto; 
-  padding: 20px; 
-  background: #bf21ea; 
-  color: #f2b9f1;       
+  margin: 0; 
+  padding: 0; 
+  /* Sets your chosen gift box GIF as the full screen background */
+  background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmJxcGJqdHZiMHp1c3NoZnA3ODE1aWFyaXY1enBnZXdoc3p0Ym5lNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FgDOBGyFLgns6aiKb/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
+
+/* A sleek glass container wrapper to keep your text readable over the moving background */
+.content-container {
+  max-width: 800px;
+  margin: 40px auto; 
+  padding: 30px; 
+  background: rgba(191, 33, 234, 0.85); /* Your original purple background made slightly see-through */
+  border-radius: 12px;
+  color: #f2b9f1;       
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
 h1 { 
-  color: #7881e9; 
+  color: #ffffff; 
   display: flex; 
   align-items: center; 
-  gap: 12px; /* Leaves a nice gap between your name and the gift */
+  gap: 12px; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 } 
-h2 { color: #320e9e; border-bottom: 2px solid #F0F0F0; } 
-p { line-height: 1.6; }
+h2 { color: #ffffff; border-bottom: 2px solid #f2b9f1; padding-bottom: 5px; } 
+p { line-height: 1.6; font-size: 1.1rem; }
 </style>
 </head>
 <body>
-<h1>
-  Hi, I'm Nuriyah!
-  <!-- Your exact chosen gift box GIF link -->
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmJxcGJqdHZiMHp1c3NoZnA3ODE1aWFyaXY1enBnZXdoc3p0Ym5lNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FgDOBGyFLgns6aiKb/giphy.gif" alt="Gift Box" width="45" height="45">
-</h1>
-<h2>About Me</h2>
-<p>I'm a ninth grader at Energy Tech</p>
-<h2>My Interests</h2>
-<p>I enjoy: Hanging out with Joselyn and eating.</p>
-<h2>My Goals for This Course</h2>
-<p>I'm taking this course to improve my skills of coding. A website about food or healthy habits.</p>
-<h2>My GitHub</h2>
-<p>Check out my projects:
-<a href="https://github.com" style="color: #ff3bb7;">GITHUB LINK</a> 
-</p>
+
+<div class="content-container">
+  <h1>
+    Hi, I'm Nuriyah!
+    <!-- Keeping the mini GIF next to your title as well -->
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmJxcGJqdHZiMHp1c3NoZnA3ODE1aWFyaXY1enBnZXdoc3p0Ym5lNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7FgDOBGyFLgns6aiKb/giphy.gif" alt="Gift Box" width="45" height="45">
+  </h1>
+  
+  <h2>About Me</h2>
+  <p>I'm a ninth grader at Energy Tech</p>
+  
+  <h2>My Interests</h2>
+  <p>I enjoy: Hanging out with Joselyn and eating.</p>
+  
+  <h2>My Goals for This Course</h2>
+  <p>I'm taking this course to improve my skills of coding. A website about food or healthy habits.</p>
+  
+  <h2>My GitHub</h2>
+  <p>Check out my projects:
+    <a href="https://github.com" style="color: #ffeb3b; font-weight: bold;">GITHUB LINK</a> 
+  </p>
+</div>
+
 </body>
 </html>
